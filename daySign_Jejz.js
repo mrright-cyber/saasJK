@@ -1,3 +1,5 @@
+require("global-agent/bootstrap");
+global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:18001";
 /*
 活动链接：https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10023&templateId=20210518190900rlqd011&activityId=1630411674675765249&nodeId=101001&prd=cjwx
 https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10040&templateId=20210518190900qrqd011&activityId=1650331967728201730&nodeId=101001&prd=cjwx
