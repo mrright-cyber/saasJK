@@ -11,7 +11,7 @@
 //export JD_SIGN_URL="sign地址" # ***必须要***
 [task_local]
 # 邀请入会（wxInviteActivity）
-7 7 7 7 7  wx_Invite_openCard_Jejz.js, tag=邀请关注（wxInviteActivity）, enabled=true
+6 6 6 6 6  wx_Invite_openCard_Jejz.js, tag=邀请关注（wxInviteActivity）, enabled=true
 */
 
 //require('global-agent/bootstrap');
