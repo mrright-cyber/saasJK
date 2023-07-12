@@ -14,7 +14,7 @@ https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10040&tem
 //export DAY_SIGN_STOP_NUM="15" // 限帐号运行
 [task_local]
 # 日历签到（interactsaas）
-7 7 7 7 7  daySign_Jejz.js, tag=日历签到（interactsaas）, enabled=true
+6 6 6 6 6  daySign_Jejz.js, tag=日历签到（interactsaas）, enabled=true
 */
 
 //require('global-agent/bootstrap');
