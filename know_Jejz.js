@@ -13,7 +13,7 @@ global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:18001";
 //export JD_SIGN_URL="sign地址" # ***必须要***
 [task_local]
 # 知识超人（interactsaas）
-7 7 7 7 7  know_Jejz.js, tag=知识超人（interactsaas）, enabled=true
+6 6 6 6 6  know_Jejz.js, tag=知识超人（interactsaas）, enabled=true
 */
 
 //require('global-agent/bootstrap');
