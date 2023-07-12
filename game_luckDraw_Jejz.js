@@ -12,7 +12,7 @@ global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:18001";
 //export JD_SIGN_URL="sign地址" # ***必须要***
 [task_local]
 # 游戏抽奖（interactsaas）
-7 7 7 7 7  game_luckDraw_Jejz.js, tag=游戏抽奖（interactsaas）, enabled=true
+6 6 6 6 6  game_luckDraw_Jejz.js, tag=游戏抽奖（interactsaas）, enabled=true
 */
 
 //require('global-agent/bootstrap');
