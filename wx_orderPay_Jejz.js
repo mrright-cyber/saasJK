@@ -10,7 +10,7 @@
 //export JD_SIGN_URL="sign地址" # ***必须要***
 [task_local]
 # 下单领好礼
-7 7 7 7 7  wx_orderPay_Jejz.js, tag=下单领好礼, enabled=true
+6 6 6 6 6  wx_orderPay_Jejz.js, tag=下单领好礼, enabled=true
 */
 
 //require('global-agent/bootstrap');
