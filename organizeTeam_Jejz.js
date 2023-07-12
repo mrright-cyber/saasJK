@@ -12,7 +12,7 @@ global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:18001";
 //export JD_SIGN_URL="sign地址" # ***必须要***
 [task_local]
 # 组队瓜分（interactsaas）
-7 7 7 7 7  organizeTeam_Jejz.js, tag=组队瓜分（interactsaas）, enabled=true
+6 6 6 6 6  organizeTeam_Jejz.js, tag=组队瓜分（interactsaas）, enabled=true
  */
  
 //require('global-agent/bootstrap');
