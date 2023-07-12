@@ -11,7 +11,7 @@
 //export JINGGENG_SHOW_SIGN_STOP_NUM="15" // 限帐号运行
 [task_local]
 # jinggeng签到有礼
-7 7 7 7 7  jinggeng_showSign_Jejz.js, tag=jinggeng签到有礼, enabled=true
+6 6 6 6 6  jinggeng_showSign_Jejz.js, tag=jinggeng签到有礼, enabled=true
 */
 
 
