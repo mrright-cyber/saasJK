@@ -14,7 +14,7 @@ https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10002&tem
 //export SIGN_STOP_NUM="15" // 限帐号运行
 [task_local]
 # 签到有礼（interactsaas）
-7 7 7 7 7  sign_Jejz.js, tag=签到有礼（interactsaas）, enabled=true
+6 6 6 6 6  sign_Jejz.js, tag=签到有礼（interactsaas）, enabled=true
 */
 
 //require('global-agent/bootstrap');
