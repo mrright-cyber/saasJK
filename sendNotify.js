@@ -21,7 +21,7 @@ const querystring = require('querystring');
 const exec = require('child_process').exec;
 const $ = new Env();
 const timeout = 15000; //超时时间(单位毫秒)
-console.log("加载sendNotify，当前版本: 20230712");
+console.log("加载sendNotify，当前版本: 20230712V1");
 // =======================================go-cqhttp通知设置区域===========================================
 //gobot_url 填写请求地址http://127.0.0.1/send_private_msg
 //gobot_token 填写在go-cqhttp文件设置的访问密钥
@@ -372,7 +372,7 @@ async function sendNotify(text, desp, params = {}, author = '\n\n本通知 By cc
                                         strNotifyOneTemp += `\n` + strAllNotify;
                                     desp = strNotifyOneTemp;
                                     if (WP_APP_TOKEN_ONE) {
-                                        await sendNotifybyWxPucher(`账号过期下线通知`, strNotifyOneTemp, strdecPtPin,'\n\n本通知 By ccwav Mod',`账号下线通知`);
+                                        await sendNotifybyWxPucher(`账号过期下线通知`, strNotifyOneTemp, strdecPtPin, '\n\n本通知 By ccwav Mod', `账号下线通知`);
                                     }
 
                                 } else {
@@ -383,7 +383,7 @@ async function sendNotify(text, desp, params = {}, author = '\n\n本通知 By cc
                                         strNotifyOneTemp += `\n` + strAllNotify;
                                     desp = strNotifyOneTemp;
                                     if (WP_APP_TOKEN_ONE) {
-                                        await sendNotifybyWxPucher(`账号过期下线通知`, strNotifyOneTemp, strdecPtPin,'\n\n本通知 By ccwav Mod',`账号下线通知`);
+                                        await sendNotifybyWxPucher(`账号过期下线通知`, strNotifyOneTemp, strdecPtPin, '\n\n本通知 By ccwav Mod', `账号下线通知`);
                                     }
                                 }
                             } else {
@@ -624,14 +624,14 @@ async function sendNotify(text, desp, params = {}, author = '\n\n本通知 By cc
         if (process.env["TG_USER_ID" + UseGroupNotify] && Use_tgBotNotify) {
             TG_USER_ID = process.env["TG_USER_ID" + UseGroupNotify];
         }
-		if (process.env["TG_PROXY_AUTH"]) 
-			TG_PROXY_AUTH = process.env["TG_PROXY_AUTH"];
-		if (process.env["TG_PROXY_HOST"]) 
-			TG_PROXY_HOST = process.env["TG_PROXY_HOST"];
-		if (process.env["TG_PROXY_PORT"]) 
-			TG_PROXY_PORT = process.env["TG_PROXY_PORT"];		
-		if (process.env["TG_API_HOST"]) 
-			TG_API_HOST = process.env["TG_API_HOST"];
+        if (process.env["TG_PROXY_AUTH"])
+            TG_PROXY_AUTH = process.env["TG_PROXY_AUTH"];
+        if (process.env["TG_PROXY_HOST"])
+            TG_PROXY_HOST = process.env["TG_PROXY_HOST"];
+        if (process.env["TG_PROXY_PORT"])
+            TG_PROXY_PORT = process.env["TG_PROXY_PORT"];
+        if (process.env["TG_API_HOST"])
+            TG_API_HOST = process.env["TG_API_HOST"];
 
         if (process.env["DD_BOT_TOKEN" + UseGroupNotify] && Use_ddBotNotify) {
             DD_BOT_TOKEN = process.env["DD_BOT_TOKEN" + UseGroupNotify];
@@ -1026,12 +1026,12 @@ async function sendNotifybyWxPucher(text, desp, PtPin, author = '\n\n本通知 B
                         }
                     }
                     if (UserRemark) {
-                        text +=  " (" + UserRemark + ")";
-						if(strsummary){
-							strsummary="(" + UserRemark + ")"+strsummary;
-						}
+                        text += " (" + UserRemark + ")";
+                        if (strsummary) {
+                            strsummary = "(" + UserRemark + ")" + strsummary;
+                        }
                     }
-					
+
                     console.log("处理完成，开始发送通知...");
                     desp = buildLastDesp(desp, author);
                     if (strAllNotify) {
@@ -1771,7 +1771,7 @@ function pushPlusNotify(text, desp) {
 function wxpusherNotifyByOne(text, desp, strsummary = "") {
     return new Promise((resolve) => {
         if (WP_APP_TOKEN_ONE) {
-            var WPURL = "";            
+            var WPURL = "";
             if (strsummary && strsummary.length > 96) {
                 strsummary = strsummary.substring(0, 95) + "...";
             }
