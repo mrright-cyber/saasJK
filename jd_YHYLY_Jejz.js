@@ -1,5 +1,7 @@
+require("global-agent/bootstrap");
+global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:18001";
 /*
-活动地址：https://mpdz-act-dz.isvjcloud.com/jdbeverage/pages/yangHeCustom/yangHeCustom?actId=jdYangHeCustom0912&bizExtString=c2hhcmVOaWNrOmJJOU9raW9tMUIyVkM5QW9ZOUpRejE0dExOWUE0c2V1QTY3TU9JWVF4RWszVmw5JTJCQVZvNE5GJTJCdGd5ZUljNkE2a2RLM3JMQlFwRVFIOVY0dGRycmgwdyUzRCUzRCZoZWFkUGljVXJsOmh0dHAlM0ElMkYlMkZzdG9yYWdlLjM2MGJ1eWltZy5jb20lMkZpLmltYWdlVXBsb2FkJTJGNmE2NDVmMzU2NDYzMzEzOTYyMzkzNzM5MzE2NDY0MzEzMTM1MzczNzM4MzQzMjMzMzEzMzM4MzEzMV9taWQuanBnJm5pY2tOYW1lOiVFNiU5NCVCRSVFOSU5NiU4QiVFOSU4MiVBMyVFNSU4MCU4QiVFNSVBNyU5MSVFNiVCNiVCQw==
+活动地址：https://mpdz-act-dz.isvjcloud.com/jdbeverage/pages/yangHeCustom/yangHeCustom?actId=jdYangHeCustom0912
 活动变量：
 //export RETRY_NUM="30" # 重试次数
 //export OPENCARD_DRAW="0" # 抽奖次数，默认0
