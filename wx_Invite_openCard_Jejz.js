@@ -1,3 +1,5 @@
+require("global-agent/bootstrap");
+global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:18001";
 /*
 活动链接：https://cjhy-isv.isvjcloud.com/wxInviteActivity/openCard/inviter?venderId=199355&activityId=18b38e870633492fb74c118ae8a8f22e
 活动变量：
