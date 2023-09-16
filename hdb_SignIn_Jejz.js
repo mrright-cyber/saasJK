@@ -1,3 +1,5 @@
+require("global-agent/bootstrap");
+global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:18001";
 /*
 活动链接：https://hdb-isv.isvjcloud.com/h5/pages/SignIn/sevenDaysin?id=1b525ba1cc9e16dc8730dcdf2d7f0e27&userId=1000461510
 https://jingyun-rc.isvjcloud.com/h5/pages/SignIn/SignIn2?id=52d942f3f1cfd6c1eea71df9ecec69aa&userId=10236952
